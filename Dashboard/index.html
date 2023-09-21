@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awasome library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/FrameWork.css">
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/ultimate.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="container d-flex">
+
+        <!-- start sidebar -->
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative text-cen mt-0 m-20">mahmoud</h3>
+            <ul>
+                <li>
+                    <a href="#" class="active d-flex align-cen fs-14 c-black rad-8 p-10">
+                        <i class="fa-solid fa-chart-simple fa-fw"></i>
+                        <span class="hide-mobile">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-cen fs-14 c-black rad-8 p-10">
+                        <i class="fa-solid fa-gears fa-fw"></i>
+                        <span class="hide-mobile">setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-cen fs-14 c-black rad-8 p-10">
+                        <i class="fa-solid fa-user fa-fw"></i>
+                        <span class="hide-mobile">profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-cen fs-14 c-black rad-8 p-10">
+                        <i class="fa-solid fa-code-branch fa-fw"></i>
+                        <span class="hide-mobile">projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-cen fs-14 c-black rad-8 p-10">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span class="hide-mobile">courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-cen fs-14 c-black rad-8 p-10">
+                        <i class="fa-solid fa-users fa-fw"></i>
+                        <span class="hide-mobile">friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-cen fs-14 c-black rad-8 p-10">
+                        <i class="fa-solid fa-file fa-fw"></i>
+                        <span class="hide-mobile">files</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-cen fs-14 c-black rad-8 p-10">
+                        <i class="fa-solid fa-credit-card fa-fw"></i>
+                        <span class="hide-mobile">plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end sidebar -->
+        <!-- -------------------------------------------------------------------- -->
+        <div class="content w-full">
+            <!-- start header -->
+            <div class="header bg-white p-15 normal-flex">
+                <div class="search">
+                    <i class="fas fa-search fa-fw"></i>
+                    <input class="p-10" type="search" placeholder="what is in mind ?">
+                </div>
+                <div class="icons d-flex align-cen">
+                    <span class="p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="images/avatar.png" alt="header-img">
+                </div>
+            </div>
+            <!-- end header -->
+            <h1 class="p-relative m-20">Dashboard</h1>
+            <!-- start grid -->
+            <div class="wrapper d-grid gap-20">
+                <div class="w bg-white block-mobile text-cen-mobile rad-8">
+                    <div class="header normal-flex bg-eee p-20">
+                        <div class="text">
+                            <h2>welcome</h2>
+                            <p>elzero</p>
+                        </div>
+                        <img class="hide-mobile" src="images/welcome.png" alt="welcome section">
+                    </div>
+                    <div class="pro-pic">
+                        <div class="img">
+                            <img src="images/avatar.png" alt="profile picture">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <ul class="d-flex fs-14 align-cen space-evenly p-20">
+                            <li class="text-cen">
+                                <h3 class="m-10 f-w-normal ">osama elzero</h3>
+                                <p class="c-grey">developer</p>
+                            </li>
+                            <li class=" text-cen">
+                                <h3 class="p-10 text-cen f-w-normal">80</h3>
+                                <p class="c-grey ">projects</p>
+                            </li>
+                            <li class=" text-cen">
+                                <h3 class="p-10 text-cen f-w-normal">$8500</h3>
+                                <p class="c-grey ">earned</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="fs-14 d-block w-fit rad-6 bg-blue c-white btn-shape" href="#">profile</a>
+                </div>
+                <div class="q-d bg-white p-20 rad-8">
+                    <h2 class="mb-10">quick draft</h2>
+                    <p class="mb-20 c-grey fs-15">write a draft for your ideas</p>
+                    <form action="">
+                        <input class="d-block mb-20 w-full p-10 b-none bg-eee rad-8" type="text" placeholder="title">
+                        <textarea class="d-block mb-20 w-full p-10 b-none bg-eee rad-8" placeholder="your thoughts"></textarea>
+                        <input class="d-block bg-blue b-none fs-14 w-fit c-white rad-6 btn-shape" type="submit" value="save">
+                    </form>
+                </div>
+                <div class="y-t bg-white p-20 rad-8">
+                    <h2 class="mb-10">yearly targets</h2>
+                    <p class="mb-20 c-grey fs-15">targets of the year</p>
+                    <div class="box blue mb-20 d-flex align-cen">
+                        <div class="icon flex-center">
+                            <i class="fa-solid fa-dollar-sign fa-lg c-blue "></i>
+                        </div>
+                        <div class="details">
+                            <span class="fs-14 c-grey">money</span>
+                            <span class="d-block mt-10 mb-10 fw-bold">$20.000</span>
+                            <div class="prog p-relative">
+                                <span class="blue bg-blue" style="width: 80%;">
+                                <span class="bg-blue">80%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box orange mb-20 d-flex align-cen">
+                        <div class="icon flex-center">
+                            <i class="fa-solid fa-code fa-lg c-orange "></i>
+                        </div>
+                        <div class="details">
+                            <span class="fs-14 c-grey">projects</span>
+                            <span class="d-block mt-10 mb-10 fw-bold">80</span>
+                            <div class="prog p-relative">
+                                <span class="orange bg-orange" style="width: 50%;">
+                                <span class="bg-orange">50%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box green mb-20 d-flex align-cen">
+                        <div class="icon flex-center">
+                            <i class="fa-solid fa-user fa-lg c-green"></i>
+                        </div>
+                        <div class="details">
+                            <span class="fs-14 c-grey">team</span>
+                            <span class="d-block mt-10 mb-10 fw-bold">12</span>
+                            <div class="prog p-relative">
+                                <span class="green bg-green" style="width: 65%;">
+                                <span class="bg-green">65%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-s bg-white p-20 rad-8">
+                    <h2 class="mb-10">Tickets Statistics</h2>
+                    <p class="mb-20 c-grey fs-15">Everything About Support Tickets</p>
+                    <div class="container-box d-flex text-cen wrap gap-20">
+                        <div class="box p-20 rad-8 fs-14 c-grey">
+                            <i class="fa-regular fa-rectangle-list fa-2x mb-10 c-orange"></i>
+                            <span class="d-block c-black fw-bold fs-25 mb-10">2500</span>
+                            total
+                        </div>
+                        <div class="box p-20 rad-8 fs-14 c-grey">
+                            <i class="fa-solid fa-spinner fa-2x mb-10 c-blue"></i>
+                            <span class="d-block c-black fw-bold fs-25 mb-10">500</span>
+                            pending
+                        </div>
+                        <div class="box p-20 rad-8 fs-14 c-grey">
+                            <i class="fa-regular fa-circle-check fa-2x mb-10 c-green"></i>
+                            <span class="d-block c-black fw-bold fs-25 mb-10">1900</span>
+                            closed
+                        </div>
+                        <div class="box p-20 rad-8 fs-14 c-grey">
+                            <i class="fa-regular fa-rectangle-xmark fa-2x mb-10 c-red"></i>
+                            <span class="d-block c-black fw-bold fs-25 mb-10">100</span>
+                            deleted
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end grid -->
+        </div>
+    
+    </div>
+</body>
+
+</html>
