@@ -41,7 +41,7 @@ a{
 }
 .container{
     background-color: #f1f5f9;
-    min-height: 200vh;
+    /* min-height: 200vh; */
 }
 .container .content h1{
     width: fit-content;
@@ -131,6 +131,34 @@ a{
         margin-bottom: 5px;
     }
 }
+/* for fixed sidebar remove the comment *
+.container .test{
+    max-width: 250px;
+    min-width: 250px;
+    box-shadow: 0 0 10px #ddd;
+}
+@media (max-width : 767px) {
+    .container .test {
+        min-width: 61px;
+        width: 61px;
+    }
+}
+.container .sidebar{
+    position: fixed;
+    width: 250px;
+    box-shadow: 0 0 10px #ddd;
+    height: 100vh;
+}
+.container .sidebar ul li a span{
+    font-size: 18px;
+    margin-left: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.container .sidebar ul li a{
+    transition: var(--main-transition);
+    margin-bottom: 30px;
+}*/
 /* end sidebar */
 /* ------------------------------------------------- */
 /* start content header */
@@ -311,6 +339,7 @@ a{
     background-color: rgb(34 197 94 / 20%);
 }
 /* end targets */
+/* ------------------------------ */
 /* start statistics  */
 .t-s .container-box .box{
     border: 1px solid #ccc;
@@ -322,7 +351,223 @@ a{
     }
 }
 /* end statistics  */
-/* ---------------------------------- */
+/* ------------------------------ */
+/* start latest news */
+.l-n .row:not(:last-of-type){
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.l-n .row img{
+    width: 100px;
+    margin-right: 20px;
+}
+.l-n .row .info{
+    flex-grow: 1;
+}
+@media (max-width: 767px) {
+    .l-n .row .info h3{
+        margin: 10px;
+    }
+    .l-n .row .info p{
+        margin-bottom: 15px;
+    }
+    .l-n .row .date{
+        width: fit-content;
+    margin: 10px auto 0
+    }
+}
+
+.l-n .row .info p{
+    margin-top: 10px;
+}
+/* end latest news */
+/* -------------------------- */
+/* start latest tasks */
+.l-t .box .text{
+    flex: 1;
+}
+.l-t .box i:hover{
+    color: var(--red-col);
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* end latest tasks */
+/* --------------------------- */
+/* start latest project progress */
+.l-p-p ul::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    left: 10px;
+    background-color: var(--blue-col);
+}
+.l-p-p ul li::before{
+    content: "";
+    margin-right: 20px;
+    display: block;
+    min-width: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    outline: 2px solid var(--blue-col);
+}
+.l-p-p ul li.done::before{
+    background-color: var(--blue-col);
+}
+.l-p-p ul li.crnt::before{
+    animation: crnt 0.9s infinite alternate;
+}
+.l-p-p img{
+    width: 180px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    opacity: 0.4;
+}
+@keyframes crnt {
+    to{
+        background-color: var(--blue-col);
+    }
+}
+/* end latest project progress */
+/* ------------------------------------- */
+/* start reminders */
+.reminders .row span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.reminders .row .text{
+    border-left: 2px solid var(--blue-col);
+}
+.reminders .row.green .text{
+    border-color: var(--green-col);
+}
+.reminders .row.orange .text{
+    border-color: var(--orange-col);
+}
+.reminders .row.red .text{
+    border-color: var(--red-col);
+}
+/* end reminders */
+/* ------------------------------------ */
+/* start latest post */
+.l-p div img{
+    width: 50px;
+}
+.l-p > p{
+    margin: 20px 0;
+    padding: 20px 0 25px;
+    line-height: 1.8;
+    border-top: 1px solid #eee;
+}
+/* end latest post */
+/* ----------------------------------- */
+/* start Social Media Stats */
+.s-m-s .box.twtr{
+    background-color: rgb(29 161 242 / 20%);
+    color: #1da1f2;
+}
+.s-m-s .box.fcbk{
+    background-color: rgb(24 119 242 / 20%);
+    color: #1da1f2;
+}
+.s-m-s .box.ytub{
+    background-color: rgb(255 0 0 / 20%);
+    color: #ff0000;
+}
+.s-m-s .box.lnkd{
+    background-color: rgb(0 119 181 / 20%);
+    color: #0077b5;
+}
+.s-m-s .box i{
+    width: 58px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--main-transition);
+}
+.s-m-s .box i:hover{
+    transform: rotateZ(7deg);
+}
+.s-m-s .box.twtr i{
+    background-color: #1da1f2;
+}
+.s-m-s .box.fcbk i{
+    background-color: #1da1f2;
+}
+.s-m-s .box.ytub i{
+    background-color: red;
+}
+.s-m-s .box.lnkd i{
+    background-color: #0077b5;
+}
+.s-m-s .box button{
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+.s-m-s .box.twtr button{
+    background-color: #1da1f2;
+}
+.s-m-s .box.fcbk button{
+    background-color: #1da1f2;
+}
+.s-m-s .box.ytub button{
+    background-color: red;
+}
+.s-m-s .box.lnkd button{
+    background-color: #0077b5;
+}
+/* end Social Media Stats */
+/* ------------------------------- */
+/* start projects table*/
+.projects div{
+    overflow-x: scroll;
+}
+.projects div table{
+    min-width: 1000px;
+    border-spacing: 0;
+}
+.projects div table thead{
+    background-color: #eee;
+}
+.projects div table thead tr th{
+
+}
+.projects div table tr{
+
+}
+.projects div table tr:hover{
+
+}
+.projects div table tr th{
+
+}
+.projects div table tr td ,
+.projects div table tr th{
+    font-size: 15px;
+    padding: 15px;
+    text-align: left;
+}
+.projects div table tr td{
+    border: 1px solid #eee;
+}
+.projects div table tr td img{
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.projects div table tr td img:not(:first-of-type){
+    margin-left: -13px;
+}
+/* end projects table*/
+/* ---------------------------- */
 /* end grid */
 
 

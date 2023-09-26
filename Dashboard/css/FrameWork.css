@@ -37,6 +37,9 @@
 /* end box */
 /* --------------------------------------- */
 /* start padding and margin and border*/
+.p-5{
+    padding: 5px;
+}
 .p-10{
     padding: 10px;
 }
@@ -46,23 +49,62 @@
 .p-20{
     padding: 20px;
 }
+.pl-15{
+    padding-left: 15px;
+}
+.pb-10{
+    padding-bottom: 10px;
+}
 .m-10{
     margin: 10px;
 }
 .m-20{
     margin: 20px;
 }
+.mt-0{
+    margin-top: 0;
+}
 .mt-10{
     margin-top: 10px;
 }
-.mt-0{
-    margin-top: 0;
+.mt-20{
+    margin-top: 20px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.mr-10{
+    margin-right: 10px;
+}
+.mb-5{
+    margin-bottom: 5px;
 }
 .mb-10{
     margin-bottom: 10px;
 }
+.mb-15{
+    margin-bottom: 15px;
+}
 .mb-20{
     margin-bottom: 20px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.ml-5{
+    margin-left: 5px;
+}
+.ml-10{
+    margin-left: 10px;
+}
+.ml-20{
+    margin-left: 20px;
+}
+.ml-30{
+    margin-left: 30px;
+}
+.bb-eee{
+    border-bottom: 1px solid #eee;
 }
 .b-none{
     border: none;
@@ -72,6 +114,9 @@
 }
 .rad-8{
     border-radius: 8px;
+}
+.op-03{
+    opacity: 0.3;
 }
 /* end padding and margin and border*/
 /* ------------------------------------------ */
@@ -87,6 +132,9 @@
 }
 .bg-green{
     background-color: var(--green-col);
+}
+.bg-red{
+    background-color: var(--red-col);
 }
 .bg-eee{
     background-color: #eee;
@@ -109,6 +157,9 @@
 .c-green{
     color: var(--green-col);
 }
+.c-red{
+    color: var(--red-col);
+}
 /* end color */
 /* --------------------------------------------- */
 /* start position */
@@ -121,11 +172,17 @@
 .text-cen{
     text-align: center;
 }
+.fs-12{
+    font-size: 12px;
+}
 .fs-14{
     font-size: 14px;
 }
 .fs-15{
     font-size: 15px;
+}
+.fs-18{
+    font-size: 18px;
 }
 .fs-25{
     font-size: 25px;
@@ -167,6 +224,7 @@
 }
 .btn-shape{
     padding: 4px 10px;
+    border-radius: 5px;
 }
 /* end componant */
 
